@@ -5,6 +5,7 @@ import nltk
 nltk.download('omw-1.4')
 nltk.download('stopwords')
 nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
 from nltk.tokenize import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
