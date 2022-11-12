@@ -13,6 +13,7 @@ contourpy
 contractions
 cycler
 decorator
+en-core-web-sm
 entrypoints
 fonttools
 gitdb
@@ -53,6 +54,8 @@ six
 sklearn
 smmap
 spacy
+spacy-legacy
+spacy-loggers
 streamlit
 textblob
 textsearch
