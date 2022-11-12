@@ -8,11 +8,12 @@ if st.button('Detect'):
     st.write(text)
     st.write(nbrTopics)
     precision,topics=predictions.predict(text,int(nbrTopics))
-    if(precision<0):
-        st.alert("Polarité : ", precision ," - COMMENTAIRE NEGATIF")
+    if polarity > 0:
+        st.warning("Polarité: " + str(polarity) + " (COMMENTAIRE POSITIF)")
+    else :
+        st.warning("Polarité: " + str(polarity) + " (COMMENTAIRE NEGATIF)")
+        st.info("Topics :")
         st.info(topics)
-    else:
-        st.alert("Polarité : ", precision, " - COMMENTAIRE POSITIF")
 
 else:
     st.write("Appuyer sur le Bouton Detect SVP")
