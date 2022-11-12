@@ -156,8 +156,8 @@ def predict(text,n_topics):
   blob = blob.sentiment
   value = blob[0]
   if(value>0):
-    return value
-  elif(value<0):
+    return value, None
+  else:
     print("Polarité : ", value," - COMMENTAIRE NEGATIF")
     text = preprocess_text(text)
     text=[text]
@@ -172,5 +172,4 @@ def predict(text,n_topics):
       result = np.where(unsorted_topics_correlations == corr_value)[0]
       topics.append(labels.get(result[0]))
     return value,topics
-  else:
-    return value
+
