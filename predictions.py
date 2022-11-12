@@ -8,7 +8,7 @@ from nltk.tokenize import RegexpTokenizer
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 
-file_name="./model_file.pickle.circ"
+file_name="model_file.pickle.circ"
 with (open(file_name, "rb")) as f:
     while True:
         try:
@@ -18,7 +18,7 @@ with (open(file_name, "rb")) as f:
 
 
 import pickle
-file_name="./vectoriseur_file.pickle.circ"
+file_name="vectoriseur_file.pickle.circ"
 with (open(file_name, "rb")) as f:
     while True:
         try:
