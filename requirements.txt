@@ -52,6 +52,7 @@ semver
 six
 sklearn
 smmap
+spacy
 streamlit
 textblob
 textsearch
